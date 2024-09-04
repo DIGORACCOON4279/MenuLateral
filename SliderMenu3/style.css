@@ -45,7 +45,6 @@ body{
     color: #ffffff;
     transition: opacity 0s ease-in-out,
 }
-
 .main-container .containerNavbar .navbar1 i.bx-arrow-from-left{
     width:auto;
     height:auto;
@@ -114,8 +113,8 @@ body{
     opacity: 0;
     visibility:hidden;
     transition: width 0.3s ease-in-out,
-    opacity 0.3s ease-in-out,
-    visibility 0.3s ease-in-out;
+                opacity 0.3s ease-in-out,
+                visibility 0.3s ease-in-out;
 }
 .main-container .containerNavbar .navbar2 i.bx-arrow-from-right:hover + .navbar,
 .main-container .containerNavbar:hover > .navbar2{
@@ -123,7 +122,6 @@ body{
     opacity: 1;
     visibility:visible;
 }
-
 .main-container .containerNavbar .navbar2 i.bx-arrow-from-right{
     width:auto;
     height:auto;
@@ -170,12 +168,6 @@ body{
 .main-container .containerNavbar .navbar2 ul li .link-item i.bx{
     font-size:20px;
 }
-
-
-
-
-
-
 
 /* Others Sections */
 
