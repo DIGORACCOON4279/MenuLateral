@@ -37,6 +37,7 @@ body{
     position: absolute;
     top:0;
     left:0;
+    overflow: hidden;
     display:flex;
     flex-direction: column;
     background-color: #000000;
@@ -109,9 +110,12 @@ body{
     display:flex;
     flex-direction: column;
     overflow: hidden;
+    border-radius: 10px;
     opacity: 0;
     visibility:hidden;
-    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out,
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
 }
 .main-container .containerNavbar .navbar2 i.bx-arrow-from-right:hover + .navbar,
 .main-container .containerNavbar:hover > .navbar2{
