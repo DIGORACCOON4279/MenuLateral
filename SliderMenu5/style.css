@@ -128,7 +128,7 @@ body{
 }
 
 .main-container .containerNavbar:hover > .menu-container .navbar2{
-    width:20vw;
+    width:18vw;
     opacity: 1;
     visibility:visible;
 }
@@ -193,6 +193,11 @@ body{
     justify-content:center;
     align-items: center;
     gap:30px;
+    margin-left: 15px;
+    transition: margin-left 0.3s ease-in-out;
+}
+.main-container .containerNavbar:hover + .container-blocks{
+    margin-left: -25px;
 }
 
 /* Others Sections */
@@ -207,12 +212,7 @@ body{
 }
 .main-container .block1{
     background-color: #ffa7a7;
-    transition:0.3s ease-in-out;
-    margin-left: 0px;
 
-}
-.main-container .containerNavbar:hover ~ .container-blocks .block1{
-    margin-left:0px;
 }
 .main-container .block2{
     background-color: #a7caff;
