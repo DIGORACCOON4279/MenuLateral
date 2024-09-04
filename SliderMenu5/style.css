@@ -31,14 +31,14 @@ body{
 .main-container .containerNavbar .menu-container{
     width: auto;
     height: auto;
-    position: relative;
+
 }
 
 /* Menu Navbar1 */
 
 .main-container .containerNavbar .navbar1{
     width:auto;
-    height:97vh;
+    height:96vh;
     cursor: pointer;
     position: fixed;
     top:10px;
@@ -109,11 +109,11 @@ body{
 
 .main-container .containerNavbar .navbar2{
     width:0;
-    height:97vh;
+    height:96vh;
     cursor: pointer;
-    position:fixed;
-    top:10px;
-    left:10px;
+    position:relative;
+    top:0px;
+    left:0px;
     background-color: #000000;
     border-radius: 10px;
     display:flex;
