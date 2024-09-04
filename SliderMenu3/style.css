@@ -1,0 +1,199 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: #f1f1f1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Main Container */
+
+.main-container{
+    width:auto;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin: 10px ;
+    overflow: hidden;
+}
+.main-container .containerNavbar{
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+
+/* Menu Navbar1 */
+
+.main-container .containerNavbar .navbar1{
+    width:auto;
+    height:100%;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: opacity 0s ease-in-out,
+}
+
+.main-container .containerNavbar .navbar1 i.bx-arrow-from-left{
+    width:auto;
+    height:auto;
+    cursor: pointer;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    margin:10px;
+}
+.main-container .containerNavbar:hover > .navbar1 i.bx-arrow-from-left{
+    opacity: 0;
+}
+.main-container .containerNavbar .navbar1 ul{
+    width:100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.main-container .containerNavbar .navbar1 ul{
+    width:100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.main-container .containerNavbar .navbar1 ul li{
+    width:100%;
+    display: flex;
+    list-style-type: none;
+}
+.main-container .containerNavbar .navbar1 ul li .link-item{
+    width:100%;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size:12px;
+    padding:15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+    align-items: center;
+    gap:30px;
+    cursor: pointer;
+}
+.main-container .containerNavbar .navbar1 ul li .link-item i.bx{
+    font-size:20px;
+}
+
+/* Menu Navbar2 */
+
+.main-container .containerNavbar .navbar2{
+    width:0;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    visibility:hidden;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.main-container .containerNavbar .navbar2 i.bx-arrow-from-right:hover + .navbar,
+.main-container .containerNavbar:hover > .navbar2{
+    width:20vw;
+    opacity: 1;
+    visibility:visible;
+}
+
+.main-container .containerNavbar .navbar2 i.bx-arrow-from-right{
+    width:auto;
+    height:auto;
+    background-color: #1f1f1f;
+    place-self: self-end;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 24px;
+    margin:10px;
+    cursor: pointer;
+}
+.main-container .containerNavbar .navbar2 ul{
+    width:100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding:0px 15px 0px 0px;
+}
+.main-container .containerNavbar .navbar2 ul li{
+    width:100%;
+    display: flex;
+    list-style-type: none;
+}
+.main-container .containerNavbar .navbar2 ul li .link-item{
+    width:100%;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size:12px;
+    padding:15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+    align-items: center;
+    gap:30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.main-container .containerNavbar .navbar2 ul li .link-item:hover{
+    background-color: #292929;
+}
+.main-container .containerNavbar .navbar2 ul li .link-item i.bx{
+    font-size:20px;
+}
+
+
+
+
+
+
+
+/* Others Sections */
+
+.main-container .section{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+}
+.main-container .block1{
+    background-color: #ffa7a7;
+    transition:0.3s ease-in-out;
+    margin-left: 50px;
+}
+.main-container .containerNavbar:hover ~ .block1{
+    margin-left:0px;
+}
+.main-container .block2{
+    background-color: #a7caff;
+}
+.main-container .block3{
+    background-color: #eda7ff;
+}
