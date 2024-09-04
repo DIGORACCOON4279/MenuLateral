@@ -26,10 +26,12 @@ body{
     height: auto;
     position: sticky;
     top:10px;
+    left:10px;
 }
 .main-container .containerNavbar .menu-container{
     width: auto;
     height: auto;
+    position: relative;
 }
 
 /* Menu Navbar1 */
@@ -39,6 +41,8 @@ body{
     height:97vh;
     cursor: pointer;
     position: fixed;
+    top:10px;
+    left:10px;
     overflow: hidden;
     display:flex;
     flex-direction: column;
@@ -107,7 +111,6 @@ body{
     width:0;
     height:97vh;
     cursor: pointer;
-    position: relative;
     background-color: #000000;
     border-radius: 10px;
     display:flex;
